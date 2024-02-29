@@ -1,0 +1,20 @@
+# Writing to a file . . . 
+
+with open('C:\\Users\\user\\Desktop\\Python\\write.txt','w') as file1:
+    file1.write('Hello World\n')
+    
+with open('C:\\Users\\user\\Desktop\\Python\\write.txt','r') as file2:
+    data=file2.read()
+    print(data)   
+
+ #If you attempt to open a file in write mode ('w') using the open() function and the file does not exist, Python will create a new file with the specified name. Therefore, if you use the write() method after opening the file in write mode, 
+#it will write the specified content to the newly created file.   
+    
+    #Append is used to open the exixting file and will not create a new file
+list1=['This is A line\n','This is B line']
+with open('C:\\Users\\user\\Desktop\\Python\\write.txt','a') as file2:
+    for line in list1:
+        file2.write(line)   
+with open('C:\\Users\\user\\Desktop\\Python\\write.txt','r') as file2:
+    data=file2.read()
+    print(data)     
