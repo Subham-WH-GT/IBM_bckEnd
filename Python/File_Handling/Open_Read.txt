@@ -1,0 +1,16 @@
+# with open('C:\\Users\\user\\Desktop\\Python\\visit.txt','r') as file1:
+#     data=file1.read()
+#     print(data)
+
+# with open('C:\\Users\\user\\Desktop\\Python\\visit.txt','r') as file1:
+#     data=file1.readline()  #read line just reads one line at a time.
+#     print(data)
+#     data=file1.readline()
+#     print(data)
+
+
+with open('C:\\Users\\user\\Desktop\\Python\\visit.txt','r') as file1:
+    data=file1.readlines(1)
+    print(data)
+    data2=file1.readlines(4)
+    print(data2)
