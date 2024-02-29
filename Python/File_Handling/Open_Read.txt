@@ -14,3 +14,10 @@ with open('C:\\Users\\user\\Desktop\\Python\\visit.txt','r') as file1:
     print(data)
     data2=file1.readlines(4)
     print(data2)
+
+# If you want to read characters from a specific position in the file, you can use the seek() method. This method moves the file pointer (like a cursor) to a particular position. The position is specified in bytes, 
+# so you'll need to know the byte offset of the characters you want to read.
+with open('C:\\Users\\user\\Desktop\\Python\\visit.txt','r') as file1:
+     file1.seek(4)
+     data=file1.readline()
+     print(data)
