@@ -1,0 +1,10 @@
+import pandas as pd
+df=pd.read_csv('C:\\Users\\user\\Desktop\\IBM_bckEnd\\eDataset.csv')
+
+print(df['ratings'])  # Access all the values of 'ratings' column
+
+print(df[['name','ratings']])  #select specific columns
+print(df[0:3])  #Select specific rows...excluding 3.
+
+
+print(df['ratings'].unique()) #returns unique values of a column

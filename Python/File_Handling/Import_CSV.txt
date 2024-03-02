@@ -1,0 +1,10 @@
+Import CSV file to python and print the content . . .
+
+
+import pandas as pd
+import csv 
+csv_file= 'C:\\Users\\user\\Desktop\\IBM_bckEnd\\eDataset.csv'
+with open(csv_file,mode='r') as file:
+    content=csv.reader(file)
+    for each_row in content:
+        print(each_row)

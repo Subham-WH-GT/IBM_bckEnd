@@ -1,0 +1,58 @@
+import pandas as pd
+
+# Creating Series from a LIst:
+data=[10,20,30,40]
+seriesFile=pd.Series(data)
+print(seriesFile)
+
+
+
+
+#Common_Methods of series . . .
+
+import pandas as pd
+
+# Creating Series from a LIst:
+data=[40,20,10,50]
+seriesFile=pd.Series(data)
+#print(seriesFile)
+
+#Common methods of a Series Datastructure:
+
+# values: Returns the Series data as a NumPy array
+print(seriesFile.values)
+
+# shape: Returns a tuple representing the dimensions of the Series
+print(seriesFile.shape) #Output: (4,)
+
+# index: Returns the index (labels) of the Series
+print(seriesFile.index)  #Output: RangeIndex(start=0, stop=4, step=1)
+
+# size: Returns the number of elements in the Series
+print(seriesFile.size) #Output: 4
+
+# Get unique values
+print(seriesFile.unique()) #Output: [40 20 10 50]
+
+# COunt of the number of unique values
+print(seriesFile.nunique()) #Output: 4
+
+# SOrt the series by Values--
+print(seriesFile.sort_values())
+#Output --   Index      Data
+             # 2         10
+             # 1         20
+             # 0         40
+             # 3         50
+
+# Sort the series By index --
+print(seriesFile.sort_index())  
+#Output-- Index     Data
+            # 0       40
+            # 1       20
+            # 2       10
+            # 3       50
+
+
+print(seriesFile.isnull()) #Check for presence of any Null value...if np null value is present resutns false
+print(seriesFile.notnull())  # if any null value  is present returns false and for not null value returns true
