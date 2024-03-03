@@ -1,0 +1,58 @@
+import numpy as np
+array=np.array([0,1,2,3,4]) #creating a numpy array
+print(type(array))
+print(array[4]) #Accessing a particular element
+print(array.dtype)
+newNpArray=array[1:5] #Slicing Numpy array
+print(newNpArray)
+newNpArray[2]=23 #Manipulating data at a particular index
+print(newNpArray)
+
+newNpArray[2:4]=[100,200] #changing multiple elements of the array
+print(newNpArray)
+
+#addition in numpy array adds the elements 
+u=np.array([1,0])
+v=np.array([0,1])
+z=u+v
+print(z)
+
+#while addition in list concatenate the elements
+arr1=[1,0]
+arr2=[0,1]
+ansarr=arr1+arr2 #It doesnot adds rather concatenate
+print(ansarr)
+
+#scalar multiplication in numpy array
+x=np.array([1,2])
+ansx=2*x
+print(ansx)
+
+
+#Product betwn 2 vectors VS Dot product --
+v1=np.array([1,2])
+v2=np.array([3,1])
+
+#Vector Product
+print(v1*v2)   #Output: [3 2]
+
+#Dot_Product --
+dotMul=np.dot(v1,v2)
+print(dotMul)  #Output: 5
+
+
+#Universal Functions in NumPy array --
+Numarr=np.array([1,2,3])
+#Mean of the array
+print(np.mean(Numarr))
+#Max element of the array
+print(np.max(Numarr))
+# Pi and trigno functions
+arr1=np.array([0,1,np.pi,np.pi/2])
+print(arr1)
+arr2=np.sin(arr1) #applys sin function to each element of the array . .
+print(arr2)
+
+#Linespace-generates numbers of the given intervals with equal spaces
+arr3=np.linspace(1,10,num=10)
+print(arr3)

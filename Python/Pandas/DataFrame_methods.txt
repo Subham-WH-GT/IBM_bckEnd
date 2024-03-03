@@ -8,3 +8,40 @@ print(df[0:3])  #Select specific rows...excluding 3.
 
 
 print(df['ratings'].unique()) #returns unique values of a column
+
+
+Practice:
+
+#Create a dataframe to display the result as below:
+import pandas as pd
+list={
+    'Student':['David','Samuel','Terry','Evan'],
+    'Age':[27,24,22,32],
+    'Country': ['UK','Canada','China','USA'],
+    'Course': ['Python','Data Structure','Machine Learning','Web Dev'],
+    'Marks': [85,72,89,76]
+};
+df=pd.DataFrame(list)
+print(type(df))
+print(df)
+
+#Retrieve the Marks column and assign it to a variable 'b'
+mark_list=df['Marks'].tolist()
+print(mark_list)
+
+#Retrieve the Country and Course columns and assign it to a variable c
+frameToDict=dict(zip(df['Course'],df['Country']))
+print(frameToDict)
+print(type(frameToDict))
+
+Series=df['Student']
+print(type(Series))
+
+print(df.iloc[1,2]) #Iloc uses index to print a data
+print(df.loc[1,'Course']) #loc uses column or row name to print the data
+
+df2=df
+df2=df2.set_index('Student') #This sets the student column as index
+print(df2.loc['Evan','Marks']) #Since student col is an index now we can use name as index...Before it was giving error
+
+
