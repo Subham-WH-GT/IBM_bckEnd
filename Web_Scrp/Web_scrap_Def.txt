@@ -1,0 +1,9 @@
+Web scraping is the process of trimming a website containing 
+many webpages.
+through web scrapping we can get the required data from a website containing 
+many webpages..
+
+Popular libraries used in Python for webscraping is :
+  
+   *Beautiful Soup (required for scrappig the website)
+   *requests  (Required for hitting http requests to get the website)

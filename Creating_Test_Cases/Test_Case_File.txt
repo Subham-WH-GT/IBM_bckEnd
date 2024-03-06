@@ -1,0 +1,36 @@
+import unittest
+from ut1 import square,double 
+
+
+#Case where all test cases matches . . .
+class TestSquare(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(square(2),4)
+        self.assertEqual(square(3.0),9.0)
+        self.assertNotEqual(square(-3),-9)
+
+class TestDouble(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(double(2),4)
+        self.assertEqual(double(-3.1),-6.2)
+        self.assertEqual(double(0),0)
+
+unittest.main()  
+
+# OutPut --  OK (Since all test cases passed).
+--------------------------------------------------------------------------------------------------------
+
+
+#Case where any testCase didn't passed 
+class TestDouble(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(double(2),9)   #Here our test case will fail intentionally
+        self.assertEqual(double(-3.1),-6.2)
+        self.assertEqual(double(0),0)
+
+OutPut:  Ran 2 tests in 0.002s
+
+FAILED (failures=1)
+
+unittest.main()  
+              

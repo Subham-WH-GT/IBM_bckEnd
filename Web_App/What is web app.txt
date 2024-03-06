@@ -1,0 +1,8 @@
+Web app is a set of tools or program through with we can
+interact with the webpages in the website without actually 
+downloading/installing the application in the system.
+
+it works over the internet via web servers.
+
+Behind the scenes it uses the most common programming languages 
+like HTMML,CSS,JS to make the website and the webpages interactive.

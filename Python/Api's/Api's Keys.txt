@@ -1,0 +1,7 @@
+When a cleint say (me) jrequires any data from any web application say
+weather services, the client goes to the Api provided by that web services 
+to access the datas. 
+
+the api of the web services will ask for the api key before giving or providing the
+datas in order to check whether the clint is authorized to have the data
+or not....Api's keys must be kept safe and secret by an clint.
